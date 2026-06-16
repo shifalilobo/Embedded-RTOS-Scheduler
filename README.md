@@ -1,14 +1,14 @@
-# Embedded RTOS Scheduler
+<img width="4240" height="5924" alt="image" src="https://github.com/user-attachments/assets/5f8cb1a1-1f7e-4fff-ab1a-f480d675abdd" /># Embedded RTOS Scheduler
 
 Designed and implemented a lightweight RTOS scheduler in C to simulate task scheduling mechanisms used in real-time systems. Developed core modules including Task Control Blocks (TCB), Ready Queue, Scheduler, Context Switching Logic, and Timer Tick Handler. Verified functionality through simulation and timing analysis.
 
----
+
 
 ## Overview
 
 Designed and implemented a simplified RTOS scheduler inspired by FreeRTOS principles. The project focuses on task management and scheduling algorithms for real-time embedded systems. The scheduler supports task priorities, delays, and periodic execution. The design demonstrates how an RTOS kernel manages multiple tasks and allocates CPU resources based on scheduling policies.
 
----
+
 
 ## Key Features
 
@@ -57,13 +57,13 @@ Designed and implemented a simplified RTOS scheduler inspired by FreeRTOS princi
 - Delay and timeout handling
 - CPU utilization through idle task execution
 
----
+
 
 ## System Architecture
 
 The RTOS scheduler consists of a timer tick module, scheduler core, task queues, and a context switching mechanism. Tasks are selected from the ready queue according to their priority and execution state.
 
----
+
 
 ## Scheduler Flow
 
@@ -90,7 +90,9 @@ Context Switch Handler
 Task Execution
 ```
 
----
+
+##Diagram
+<img width="4240" height="5924" alt="image" src="https://github.com/user-attachments/assets/1bc3f383-941f-4896-ab5e-c005eed7c947" />
 
 ## Core Modules
 
@@ -128,7 +130,7 @@ Performs task switching by saving and restoring task contexts.
 
 Runs whenever no user tasks are ready for execution, ensuring efficient CPU utilization.
 
----
+
 
 ## Task States
 
@@ -139,7 +141,7 @@ The scheduler manages tasks through the following states:
 - Blocked
 - Suspended
 
----
+
 
 ## Scheduling Algorithms
 
@@ -151,7 +153,7 @@ Tasks having the same priority are executed in a cyclic manner with equal CPU ti
 
 The scheduler always selects the highest-priority ready task for execution.
 
----
+
 
 ## Directory Structure
 
@@ -185,7 +187,7 @@ Embedded-RTOS-Scheduler
 └── README.md
 ```
 
----
+
 
 ## Verification
 
@@ -198,7 +200,7 @@ Performed functional verification using software-based test cases to validate:
 - Context switching operation
 - Queue management and task transitions
 
----
+
 
 ## Tools & Technologies
 
@@ -212,7 +214,7 @@ Performed functional verification using software-based test cases to validate:
 - Git
 - GitHub
 
----
+
 
 ## Applications
 
@@ -225,13 +227,13 @@ This scheduler architecture can be applied in:
 - Industrial automation systems
 - Real-time monitoring systems
 
----
+
 
 ## Outcome
 
 Successfully demonstrated the operation of a lightweight RTOS scheduler and gained hands-on experience in task management, scheduling algorithms, queue implementation, context switching, and timing mechanisms. This project strengthened practical understanding of RTOS internals and concepts commonly used in FreeRTOS and embedded firmware development.
 
----
+
 
 ## Future Enhancements
 
@@ -248,4 +250,4 @@ The following features can be added to further enhance the scheduler:
 - Multi-level priority queues
 - Support for periodic tasks
 
----
+
