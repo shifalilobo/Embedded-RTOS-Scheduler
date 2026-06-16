@@ -7,6 +7,13 @@ Designed and implemented a lightweight RTOS scheduler in C to simulate task sche
 
 Designed and implemented a simplified RTOS scheduler inspired by FreeRTOS principles. The project focuses on task management and scheduling algorithms for real-time embedded systems. The scheduler supports task priorities, delays, and periodic execution. The design demonstrates how an RTOS kernel manages multiple tasks and allocates CPU resources based on scheduling policies.
 
+## Project Objectives
+
+- Understand RTOS kernel fundamentals.
+- Implement task scheduling mechanisms used in embedded systems.
+- Simulate context switching and task state transitions.
+- Demonstrate round-robin and priority-based scheduling algorithms.
+- Gain hands-on experience with RTOS internals inspired by FreeRTOS.
 
 ## Key Features
 
@@ -148,6 +155,19 @@ Tasks having the same priority are executed in a cyclic manner with equal CPU ti
 
 The scheduler always selects the highest-priority ready task for execution.
 
+## Sample Execution
+
+Task1 (Priority 3)
+Task2 (Priority 2)
+Task3 (Priority 1)
+
+Tick 1 -> Task1 executes
+Tick 2 -> Task1 executes
+Tick 3 -> Task1 delays for 5 ticks
+Tick 4 -> Task2 executes
+Tick 5 -> Task2 executes
+Tick 6 -> Task3 executes
+Tick 8 -> Task1 becomes ready again
 
 ## Directory Structure
 
@@ -226,15 +246,17 @@ Successfully demonstrated the operation of a lightweight RTOS scheduler and gain
 
 ## Future Enhancements
 
-The following features can be added to further enhance the scheduler:
+The following features can be incorporated to extend the scheduler into a more complete RTOS kernel:
 
 - Software timers
-- Semaphores
-- Mutexes
+- Binary semaphores
+- Counting semaphores
+- Mutexes with priority inheritance
 - Message queues
 - Event groups
 - Dynamic memory management
-- Priority inheritance mechanism
 - Inter-task communication
 - Multi-level priority queues
 - Support for periodic tasks
+- Stack overflow detection
+- Priority inversion handling
